@@ -92,11 +92,39 @@ The calculated transmission-loss results are compared with the corresponding res
 
 This reproduction serves as a validation step before applying the analytical framework to further geometrical configurations.
 
-### Repository Contents
 
-```text
-Paper_1_Pod_Silencer/
-│
-├── Paper_1_Pod_Silencer_Reproduction.m
-├── README.md
-└── Results/
+## Reproduced Paper 2 — Comparison of Analytical Methods
+### Overview
+
+The second reproduction implements and compares analytical approaches for acoustic propagation and transmission loss in lined circular ducts.
+
+The study is used to understand the different formulations and establish an analytical framework suitable for further evaluation of HVAC silencer configurations.
+
+### Analytical Approach
+
+The MATLAB implementation includes:
+
+Forward and backward propagating acoustic modes.
+Mean-flow effects.
+Complex axial and radial wavenumbers.
+Acoustic impedance modelling.
+Characteristic equations for the acoustic modes.
+Numerical solution using Newton-Raphson iteration.
+Transfer-matrix formulations.
+Comparison of multiple analytical approaches.
+Parameters Investigated
+
+### Parameters 
+The implementation investigates the effects of parameters including:
+
+Mach number
+Duct geometry
+Lining characteristics
+Annular cavity dimensions
+Geometrical ratios
+Frequency
+Validation and Comparison
+
+The predicted transmission-loss characteristics obtained using the different analytical approaches are compared with the corresponding results reported in the reference study.
+
+The comparison is used to understand the applicability and behaviour of the different formulations before applying the analytical methods to the present crosstalk-silencer problem.
