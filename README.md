@@ -25,7 +25,7 @@ The project uses established analytical and transfer-matrix methods to evaluate 
 
 The project is divided into two main stages:
 
-### Stage 1 — Literature Reproduction and Validation
+### Stage 1: Literature Reproduction and Validation
 
 Analytical models reported in published literature are implemented in MATLAB and their results are reproduced.
 
@@ -39,7 +39,7 @@ The reproduction process involves:
 6. Calculating transmission loss over the required frequency range.
 7. Comparing the reproduced results with the corresponding published results.
 
-### Stage 2 — Evaluation of Crosstalk Silencer Geometries
+### Stage 2: Evaluation of Crosstalk Silencer Geometries
 
 After establishing and validating the analytical methods, the same approaches are used to evaluate different HVAC crosstalk silencer geometries.
 
@@ -57,7 +57,7 @@ The original research papers are **not redistributed in this repository**. The c
 
 ---
 
-## Reproduced Paper 1 — Pod Silencers
+## Reproduced Paper 1: Pod Silencers
 
 ### Overview
 
