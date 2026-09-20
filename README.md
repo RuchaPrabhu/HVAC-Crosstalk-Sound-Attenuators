@@ -128,3 +128,66 @@ Validation and Comparison
 The predicted transmission-loss characteristics obtained using the different analytical approaches are compared with the corresponding results reported in the reference study.
 
 The comparison is used to understand the applicability and behaviour of the different formulations before applying the analytical methods to the present crosstalk-silencer problem.
+
+## Application to HVAC Crosstalk Silencers
+
+Following validation of the reproduced analytical models, established analytical and transfer-matrix methods are applied to HVAC crosstalk silencer geometries.
+
+The analysis focuses on understanding how changes in geometry influence acoustic attenuation and transmission loss.
+
+### Parameters of Interest
+Silencer geometry
+Duct dimensions
+Frequency
+Acoustic modes
+Transmission loss
+Flow characteristics
+
+Different geometrical configurations will be evaluated and compared to understand their suitability for reducing HVAC crosstalk.
+
+## Current Progress
+Completed
+Literature review of HVAC acoustic crosstalk and silencer configurations.
+Study of established analytical methods for duct acoustics.
+Reproduction of the selected pod-silencer analytical model.
+MATLAB implementation of the corresponding analytical formulation.
+Reproduction of the selected analytical-method comparison study.
+Comparison of reproduced transmission-loss results with published results.
+Initial application of transfer-matrix methods to crosstalk-silencer analysis.
+Ongoing
+Evaluation of different crosstalk silencer geometries.
+Comparison of transmission loss across geometrical configurations.
+Investigation of acoustic mode behaviour.
+Pressure-drop analysis of selected configurations.
+
+## Future Work
+Evaluate additional crosstalk silencer geometries using the validated analytical methods.
+Compare the acoustic performance of the different configurations.
+Investigate the relationship between geometry, acoustic modes, and transmission loss.
+Evaluate pressure-drop characteristics for selected configurations.
+Identify suitable configurations for further investigation.
+Fabricate and experimentally test selected configurations, subject to successful analytical validation.
+
+### Tools and Technologies
+MATLAB
+Transfer Matrix Method
+Acoustic modelling
+Modal analysis
+Numerical methods
+Transmission-loss analysis
+Repository Structure
+
+```text
+Literature-Reproduction/
+│
+├── Paper-1-Pod-Silencer/
+│   ├── README.md
+│   ├── MATLAB/
+│   │   └── Paper_1_Pod_Silencer_Reproduction.m
+│   └── Results/
+│
+└── Paper-2-Method-Comparison/
+    ├── README.md
+    ├── MATLAB/
+    │   └── Paper_2_Method_Comparison_Reproduction.m
+    └── Results/
