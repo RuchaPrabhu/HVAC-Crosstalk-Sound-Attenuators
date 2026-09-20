@@ -93,7 +93,7 @@ The calculated transmission-loss results are compared with the corresponding res
 This reproduction serves as a validation step before applying the analytical framework to further geometrical configurations.
 
 
-## Reproduced Paper 2 — Comparison of Analytical Methods
+## Reproduced Paper 2: Comparison of Analytical Methods
 ### Overview
 
 The second reproduction implements and compares analytical approaches for acoustic propagation and transmission loss in lined circular ducts.
