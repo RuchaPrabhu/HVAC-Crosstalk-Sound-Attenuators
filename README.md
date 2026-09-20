@@ -1,41 +1,102 @@
-# Pod Silencer Model Reproduction
+# Design and Analysis of Novel Sound Attenuators for HVAC Duct Systems
 
 ## Overview
 
-This folder contains a MATLAB implementation used to reproduce the
-analytical results of the selected pod-silencer study.
+Room-to-room crosstalk through HVAC duct systems can provide an unintended path for speech and other sounds to propagate between spaces. This project focuses on the design and analysis of sound attenuators for reducing acoustic crosstalk through HVAC duct systems.
 
-## Method
+The project uses established analytical and transfer-matrix methods to evaluate the acoustic performance of different crosstalk silencer geometries. Published analytical models are first reproduced and validated against the results reported in the literature. The validated methods are then used to investigate and compare different geometrical configurations.
 
-The implementation uses the analytical formulation reported in the
-reference study to determine the acoustic response of the silencer.
+---
 
-The characteristic equation is solved numerically to obtain the complex
-axial wavenumber. The resulting wavenumber is then used in transfer-matrix
-calculations to determine transmission loss.
+## Objectives
 
-## Numerical Method
+- Study the mechanism of acoustic crosstalk transmission through HVAC duct systems.
+- Review existing analytical models for duct acoustics and crosstalk silencers.
+- Reproduce selected published analytical models using MATLAB.
+- Validate the implemented models by comparing reproduced results with published results.
+- Apply established analytical and transfer-matrix methods to evaluate different crosstalk silencer geometries.
+- Investigate the influence of geometry and frequency on transmission loss.
+- Study the effect of acoustic modes on the performance of the silencers.
+- Evaluate pressure-drop characteristics alongside acoustic performance for selected geometries.
 
-- Symbolic formulation of the characteristic matrix
-- Bessel and Neumann functions for radial acoustic fields
-- Newton-Raphson iteration for complex axial wavenumber
-- Frequency-by-frequency root continuation
-- Transfer-matrix formulation
-- Transmission-loss calculation
+---
 
-## Parameters Investigated
+## Methodology
 
-The implementation evaluates the effect of:
+The project is divided into two main stages:
 
+### Stage 1 — Literature Reproduction and Validation
+
+Analytical models reported in published literature are implemented in MATLAB and their results are reproduced.
+
+The reproduction process involves:
+
+1. Studying the theoretical formulation presented in the reference paper.
+2. Deriving and implementing the required acoustic equations.
+3. Implementing the characteristic equations and boundary conditions.
+4. Numerically solving for the required acoustic wavenumbers and modal quantities.
+5. Constructing the relevant transfer matrices.
+6. Calculating transmission loss over the required frequency range.
+7. Comparing the reproduced results with the corresponding published results.
+
+### Stage 2 — Evaluation of Crosstalk Silencer Geometries
+
+After establishing and validating the analytical methods, the same approaches are used to evaluate different HVAC crosstalk silencer geometries.
+
+The geometries are compared based on their predicted acoustic performance, with particular focus on transmission loss and frequency-dependent attenuation.
+
+Pressure-drop characteristics will subsequently be considered alongside acoustic performance when evaluating selected configurations.
+
+---
+
+# Literature Reproduction
+
+The analytical models used in this project are based on previously published research. The purpose of the reproduction work is to understand, implement, and validate the analytical formulations before applying them to the evaluation of new geometrical configurations.
+
+The original research papers are **not redistributed in this repository**. The corresponding references are provided in the README files within each paper folder.
+
+---
+
+## Reproduced Paper 1 — Pod Silencers
+
+### Overview
+
+The first reproduction implements the analytical model presented in the reference study for the analysis and design of pod silencers.
+
+The MATLAB implementation reproduces the acoustic formulation and transmission-loss calculations for the configurations investigated in the paper.
+
+### Analytical Approach
+
+The implementation includes:
+
+- Formulation of the acoustic characteristic equation.
+- Radial acoustic field representation using Bessel and Neumann functions.
+- Numerical determination of complex axial wavenumbers.
+- Newton-Raphson iteration for solving the characteristic equation.
+- Frequency-by-frequency tracking of the required roots.
+- Transfer-matrix formulation of the acoustic elements.
+- Calculation of the overall transmission loss.
+
+### Parameters Investigated
+
+The implementation is used to investigate the effect of:
+
+- Pod geometry
 - Pod radius
-- Absorptive-section geometry
+- Silencer configuration
 - Frequency
 
-## Results
+### Validation
 
-The script generates transmission-loss curves corresponding to the
-configurations investigated in the reference study.
+The calculated transmission-loss results are compared with the corresponding results reported in the reference paper.
 
-## Reference
+This reproduction serves as a validation step before applying the analytical framework to further geometrical configurations.
 
-[Add the full citation of the paper here.]
+### Repository Contents
+
+```text
+Paper_1_Pod_Silencer/
+│
+├── Paper_1_Pod_Silencer_Reproduction.m
+├── README.md
+└── Results/
