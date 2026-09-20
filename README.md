@@ -52,4 +52,4 @@ Following validation, established analytical methods are applied to different HV
 
 ## References
 
-Relevant research papers used for model reproduction and analytical development are documented within the repository.# HVAC-Crosstalk-Sound-Attenuators
+Relevant research papers used for model reproduction and analytical development are documented within the repository.
